@@ -3,6 +3,7 @@
  */
 
 #include "Debounce2.h"
+
 #include "Arduino.h"
 
 Debounce2::Debounce2() {}
@@ -37,7 +38,6 @@ bool Debounce2::check() {
   }
 
   if (millis() - _period_counter < _period) {
-    Serial.println(".");
     if (_state != digitalRead(_pin)) {
       _state = digitalRead(_pin);
       _period_counter = millis();
