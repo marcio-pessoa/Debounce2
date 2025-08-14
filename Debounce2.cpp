@@ -3,7 +3,6 @@
  */
 
 #include "Debounce2.h"
-
 #include "Arduino.h"
 
 Debounce2::Debounce2() {}
@@ -56,3 +55,5 @@ bool Debounce2::check() {
 
   return false;
 }
+
+bool Debounce2::isPressed() { return check(); }

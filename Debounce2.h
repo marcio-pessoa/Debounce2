@@ -15,6 +15,7 @@ class Debounce2 {
   void attach(byte pin, unsigned int period = 50, unsigned int interval = 500,
               bool pullup = false);
   bool check();
+  bool isPressed();
 
  private:
   byte _pin;
