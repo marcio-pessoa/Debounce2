@@ -29,6 +29,14 @@ class Debounce2 {
    * @return true if the pin is considered pressed, false otherwise.
    */
   bool read();
+  /**
+   * @brief Alias for read(). Kept for backward compatibility.
+   */
+  bool check();
+  /**
+   * @brief Alias for read(). Kept for backward compatibility.
+   */
+  bool isPressed();
 
  private:
   byte _pin;

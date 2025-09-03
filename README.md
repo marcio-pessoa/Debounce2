@@ -68,3 +68,7 @@ Attaches the debouncer to a specific pin.
 Reads the debounced state of the input. This function should be called repeatedly in your `loop()`.
 
 - **Returns:** `true` if a valid press is detected, `false` otherwise.
+
+### `bool check()` / `bool isPressed()`
+
+These methods are aliases for `read()` and are kept for backward compatibility.

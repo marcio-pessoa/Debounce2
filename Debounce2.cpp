@@ -46,3 +46,7 @@ bool Debounce2::read() {
 
   return false;
 }
+
+bool Debounce2::check() { return read(); }
+
+bool Debounce2::isPressed() { return read(); }
